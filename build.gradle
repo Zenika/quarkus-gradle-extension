@@ -1,0 +1,15 @@
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+
+    version='0.0.1-SNAPSHOT'
+    group='com.zenika'
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    test {
+        systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+    }
+}
