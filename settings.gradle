@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        mavenLocal ()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'io.quarkus.extension' version "${quarkusPluginVersion}"
+    }
+}
+
+include 'simple-extension', 'simple-extension-deployment'

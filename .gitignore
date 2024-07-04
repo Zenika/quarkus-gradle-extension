@@ -1,0 +1,9 @@
+.idea
+.gradle
+build/
+*.ipr
+*.iml
+*.iws
+
+simple-extension/build/
+simple-extension-deployment/build/
